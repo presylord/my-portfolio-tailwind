@@ -10,10 +10,12 @@ const About = () => {
                 </div>
                 <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
                     <div className="sm:text-right text-4xl font-bold ">
-                        <p>Hi. I'm Presy Lord, nice to meet you. Please take a look around</p>
+                        <p>Hi. I&apos;m Presy Lord, nice to meet you. Please take a look around</p>
                     </div>
                     <div>
-                        <p>Background...</p>
+                        <p>
+                            I'm a passionate web developer with expertise in React, JavaScript, jQuery, Odoo Development, Magento, Shopify, BigCommerce, WordPress, Python, NodeJS, DevOps, and SEO. I thrive on challenges and love expanding my skills. Let's collaborate and bring your ideas to life!
+                        </p>
                     </div>
                 </div>
             </div>
