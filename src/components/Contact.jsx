@@ -1,4 +1,3 @@
-import React from "react";
 
 const Contact = () => {
   return (
@@ -12,8 +11,12 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
             Contact
           </p>
-          <p className="text-gray-300 py-4">Send me an email</p>
+          <p className="text-gray-300 py-4">Send me an email - presylord@gmail.com</p>
         </div>
+        <input type="text" className=" bg-[#ccd6f6] p-2 rounded-lg	" placeholder="Name" name="name" />
+        <input type="email" className="my-4 p-2 bg-[#ccd6f6] rounded-lg	" placeholder="Email" name="email" />
+        <textarea className="bg-[#ccd6f6] p-2 rounded-lg	" placeholder="Message" name="message" rows="10" />
+        <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">Contact Me</button>
       </form>
     </div>
   );

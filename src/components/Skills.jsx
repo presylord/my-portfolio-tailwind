@@ -38,7 +38,7 @@ const skill_logos = [
 
 const Skills = () => {
   return (
-    <div name="skills" className=" bg-[#08192f] w-full h-screen">
+    <div name="skills" className=" bg-[#08192f] w-full md:h-screen">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full text-gray-300 ">
         <div>
@@ -48,14 +48,14 @@ const Skills = () => {
           <p className="py-4">These are the technologies I've worked with</p>
         </div>
         {/* Icons */}
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 text-center py-8">
           {skill_logos.map(({ name, img }, index) => {
             return (
               <div
                 key={index}
                 className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
               >
-                <img className="w-20 mx-auto " src={img} />
+                <img className="w-10 mx-auto " src={img} />
                 <p className="my-4">{name}</p>
               </div>
             );
