@@ -29,8 +29,8 @@ const Work = () => {
                 style={{ backgroundImage: `url(${image})` }}
                 className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div overflow-clip"
               >
-                <div className="mb-[-240px] group-hover:mb-[0px] duration-300">
-                  <span className="text-2xl font-bold text-white tracking-wider">
+                <div className="mb-[-280px] group-hover:mb-[0px] duration-300">
+                  <span className="text-1xl font-bold text-white tracking-wider">
                     {name}
                   </span>
                   <div className="pt-8 text-center flex">

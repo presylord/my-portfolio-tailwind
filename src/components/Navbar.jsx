@@ -17,29 +17,29 @@ const Navbar = () => {
         <p className="text-3xl logo-text font-bold">&lt;PresyLord_Dev/&gt;</p>
       </div>
       {/* Menu */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex nav-menu">
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" activeClass="active" smooth={true} duration={400} spy={true} >
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500} >
+          <Link to="about" activeClass="active" smooth={true} duration={400} spy={true} >
             About
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500} >
+          <Link to="skills" activeClass="active" smooth={true} duration={400} spy={true} >
             Skills
           </Link>
         </li>
         <li>
-          <Link to="projects" smooth={true} duration={500} >
+          <Link to="projects" activeClass="active" smooth={true} duration={400} spy={true} >
             Projects
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500} >
+          <Link to="contact" activeClass="active" smooth={true} duration={400} spy={true}>
             Contact
           </Link>
         </li>
