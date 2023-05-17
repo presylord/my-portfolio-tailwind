@@ -38,17 +38,20 @@ const skill_logos = [
 
 const Skills = () => {
   return (
-    <div name="skills" className=" bg-[#08192f] w-full md:h-screen">
+    <div
+      name="skills"
+      className=" bg-[#08192f] w-full  md:h-screen max-[768px]:pt-20 "
+    >
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full text-gray-300 ">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 ">
+          <p className="text-4xl font-bold inline border-b-4 border-[#19A7CE] ">
             Skills
           </p>
           <p className="py-4">These are the technologies I've worked with</p>
         </div>
         {/* Icons */}
-        <div className="w-full grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-3 max-[425px]:grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4 text-center py-8">
           {skill_logos.map(({ name, img }, index) => {
             return (
               <div
@@ -56,7 +59,7 @@ const Skills = () => {
                 className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"
               >
                 <img className="w-10 mx-auto " src={img} />
-                <p className="my-4">{name}</p>
+                <p className="my-4 max-[425px]:text-sm">{name}</p>
               </div>
             );
           })}
