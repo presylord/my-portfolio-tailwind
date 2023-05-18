@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className=" bg-[#08192f] w-full md:h-screen text-gray-300 max-md:pt-20"
+      className=" bg-[#08192f] w-full md:h-screen text-gray-300 max-md:pt-20 "
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -36,7 +36,7 @@ const Projects = () => {
             return (
               <div
                 key={index}
-                style={{ backgroundImage: `url(${img})` }}
+                style={{ backgroundImage: `url(${img})`, backgroundSize: "contain" }}
                 className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div overflow-clip  "
               >
                 <div className="group mb-[-200px] group-hover:mb-[0px] duration-500 w-full px-4 ">

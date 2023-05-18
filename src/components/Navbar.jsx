@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300  z-10">
       <div>
         {/* <img src={Logo} style={{ width: '50px' }} /> */}
         <p className="text-2xl md:text-3xl  logo-text font-bold drop-shadow-2xl">
@@ -48,7 +48,7 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburger */}
-      <div className="md:hidden z-10" onClick={handleClick}>
+      <div className="md:hidden " onClick={handleClick}>
         {toggle ? <FaTimes /> : <FaBars />}
       </div>
 
@@ -56,7 +56,7 @@ const Navbar = () => {
       <ul
         className={
           toggle
-            ? "absolute top-0 left-0 w-full h-screen bg-[#08192f] flex flex-col justify-center items-center"
+            ? "absolute top-0 left-0 w-full h-screen bg-[#08192f] flex flex-col justify-center items-center "
             : "hidden"
         }
       >

@@ -26,7 +26,7 @@ const Home = () => {
             wrapper="span"
             cursor={true}
             repeat={Infinity}
-            style={{ color: "#ccd6f6" }}
+            style={{ color: "#19A7CE" }}
           />
         </h2>
 
