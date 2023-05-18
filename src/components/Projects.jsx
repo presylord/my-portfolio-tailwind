@@ -1,4 +1,5 @@
 import { FaLaptop, FaLaptopCode } from "react-icons/fa";
+import Portfolio from "../assets/portfolio_img.png"
 
 const projects = [
   {
@@ -12,7 +13,8 @@ const projects = [
   { name: "Recipe Suggestions", github: "", demo: "" },
   { name: "IP Tracker", github: "", demo: "" },
   { name: "Image to Text Converter", github: "", demo: "" },
-  { name: "Project Portfolio", github: "", demo: "" },
+  { name: "Simple Calculator", github: "", demo: "" },
+  { name: "Project Portfolio", img: Portfolio, github: "", demo: "" },
 ];
 
 const Projects = () => {
@@ -30,14 +32,14 @@ const Projects = () => {
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Card */}
-          {projects.map(({ name, image, github, demo }, index) => {
+          {projects.map(({ name, img, github, demo }, index) => {
             return (
               <div
                 key={index}
-                style={{ backgroundImage: `url(${image})` }}
-                className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div overflow-clip "
+                style={{ backgroundImage: `url(${img})` }}
+                className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div overflow-clip  "
               >
-                <div className="group mb-[-200px] group-hover:mb-[0px] duration-500 w-full px-4">
+                <div className="group mb-[-200px] group-hover:mb-[0px] duration-500 w-full px-4 ">
                   <span className="text-1xl font-bold text-white tracking-wider">
                     {name}
                   </span>
