@@ -19,6 +19,13 @@ const Navbar = () => {
     { name: "Contact", target: "contact" },
   ];
 
+  const social = [
+    { name: "LinkedIn", icon: <FaLinkedin size={30} />, url: "https://www.linkedin.com/in/presylord/", color: "bg-blue-600" },
+    { name: "Github", icon: <FaGithub size={30} />, url: "https://github.com/presylord", color: "bg-[#333333]" },
+    { name: "Email", icon: <HiOutlineMail size={30} />, url: "mailto:presylord@gmail.com", color: "bg-[#6fc2b0]" },
+    { name: "Resume", icon: <BsFillPersonLinesFill size={30} />, url: "#", color: "bg-[#565f69]" },
+  ]
+
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300  z-10">
       <div>
@@ -79,50 +86,19 @@ const Navbar = () => {
       {/* Social Icons */}
       <div className="hidden md:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
-            <a
+          {social.map(({ name, icon, url, color }, index) => {
+            return <a key={index}
               className="flex justify-between items-center w-full"
-              href="https://www.linkedin.com/in/presylord/"
+              href={url}
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn
-              <FaLinkedin size={30} />
+              <li className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${color}`}>
+                {name}
+                {icon}
+              </li>
             </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
-            <a
-              className="flex justify-between items-center w-full"
-              href="https://github.com/presylord"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-              <FaGithub size={30} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
-            <a
-              className="flex justify-between items-center w-full"
-              href="mailto:presylord@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Email
-              <HiOutlineMail size={30} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-            <a
-              className="flex justify-between items-center w-full"
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Resume
-              <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
+          })}
         </ul>
       </div>
     </div>

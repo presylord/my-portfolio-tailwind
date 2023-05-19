@@ -1,7 +1,6 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
-import ParticlesBackground from "./ParticlesBackground";
 
 const Home = () => {
   return (
@@ -16,11 +15,11 @@ const Home = () => {
           <TypeAnimation
             sequence={[
               " Full Stack Developer",
-              3000,
+              2000,
               " Tech Enthusiast",
-              3000,
+              2000,
               " Coder",
-              3000,
+              2000,
             ]}
             wrapper="span"
             cursor={true}
