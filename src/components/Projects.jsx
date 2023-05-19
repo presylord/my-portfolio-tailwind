@@ -57,13 +57,13 @@ const Projects = () => {
                     scelerisque.
                   </p>
                   <div className="hidden group-hover:flex duration-500 pt-6 text-center justify-center">
-                    <a href={demo}>
+                    <a href={demo} target="_blank">
                       <button className="flex text-center rounded-lg px-3 py-2 m-2 bg-white text-gray-700 font-bold text-md">
                         <FaLaptop size={20} className="mr-1" />
                         Demo
                       </button>
                     </a>
-                    <a href={github}>
+                    <a href={github} target="_blank">
                       <button className="flex text-center rounded-lg px-3 py-2 m-2 bg-white text-gray-700 font-bold text-md">
                         <FaLaptopCode size={20} className="mr-1" />
                         Code
