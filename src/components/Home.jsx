@@ -1,7 +1,7 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
-import { TypeAnimation } from 'react-type-animation';
-
+import { TypeAnimation } from "react-type-animation";
+import ParticlesBackground from "./ParticlesBackground";
 
 const Home = () => {
   return (
@@ -15,13 +15,12 @@ const Home = () => {
           I&#39;m a
           <TypeAnimation
             sequence={[
-              ' Full Stack Developer', // Types 'One'
-              3000, // Waits 1s
-              ' Tech Enthusiast', // Deletes 'One' and types 'Two'
-              3000, // Waits 2s
-              ' Coder',
-              3000, // Types 'Three' without deleting 'Two'
-
+              " Full Stack Developer",
+              3000,
+              " Tech Enthusiast",
+              3000,
+              " Coder",
+              3000,
             ]}
             wrapper="span"
             cursor={true}

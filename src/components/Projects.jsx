@@ -1,5 +1,5 @@
 import { FaLaptop, FaLaptopCode } from "react-icons/fa";
-import Portfolio from "../assets/portfolio_img.png"
+import Portfolio from "../assets/portfolio_img.png";
 
 const projects = [
   {
@@ -14,7 +14,12 @@ const projects = [
   { name: "IP Tracker", github: "", demo: "" },
   { name: "Image to Text Converter", github: "", demo: "" },
   { name: "Simple Calculator", github: "", demo: "" },
-  { name: "Project Portfolio", img: Portfolio, github: "", demo: "" },
+  {
+    name: "Project Portfolio",
+    img: Portfolio,
+    github: "https://github.com/presylord/my-portfolio-tailwind",
+    demo: "/",
+  },
 ];
 
 const Projects = () => {
@@ -36,7 +41,10 @@ const Projects = () => {
             return (
               <div
                 key={index}
-                style={{ backgroundImage: `url(${img})`, backgroundSize: "contain" }}
+                style={{
+                  backgroundImage: `url(${img})`,
+                  backgroundSize: "contain",
+                }}
                 className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div overflow-clip  "
               >
                 <div className="group mb-[-200px] group-hover:mb-[0px] duration-500 w-full px-4 ">
