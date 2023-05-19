@@ -47,16 +47,16 @@ const Projects = () => {
                 }}
                 className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div overflow-clip  "
               >
-                <div className="group mb-[-200px] group-hover:mb-[0px] duration-500 w-full px-4 ">
-                  <span className="text-1xl font-bold text-white tracking-wider">
+                <div className="group mb-[-400px] group-hover:mb-[0px] duration-500 w-full p-4 desc-div group-hover:text-sm ">
+                  <span className="text-1xl font-bold text-white tracking-wider ">
                     {name}
                   </span>
-                  <p className="hidden group-hover:flex duration-500 pt-5">
+                  <p className="hidden group-hover:flex  pt-5">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Praesent commodo orci vitae lectus dictum, eu sodales nisl
                     scelerisque.
                   </p>
-                  <div className="hidden group-hover:flex duration-500 pt-6 text-center justify-center">
+                  <div className="hidden group-hover:flex  pt-6 text-center justify-center">
                     <a href={demo} target="_blank">
                       <button className="flex text-center rounded-lg px-3 py-2 m-2 bg-white text-gray-700 font-bold text-md">
                         <FaLaptop size={20} className="mr-1" />
