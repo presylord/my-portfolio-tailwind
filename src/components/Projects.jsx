@@ -1,6 +1,7 @@
 import { FaLaptop, FaLaptopCode } from "react-icons/fa";
 import Portfolio from "../assets/project-portfolio.png";
 import Calculator from "../assets/project-calculator.png";
+import Tracker from "../assets/project-ip-tracker.png";
 
 const projects = [
   {
@@ -12,7 +13,7 @@ const projects = [
     demo: "",
   },
   { name: "Recipe Suggestions", github: "", demo: "" },
-  { name: "IP Tracker", github: "", demo: "" },
+  { name: "IP Tracker", img: Tracker, github: "", demo: "" },
   { name: "Image to Text Converter", github: "", demo: "" },
   { name: "Simple Calculator", img: Calculator, github: "", demo: "" },
   {
