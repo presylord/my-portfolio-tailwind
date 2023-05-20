@@ -13,9 +13,9 @@ const projects = [
     demo: "",
   },
   { name: "Recipe Suggestions", github: "", demo: "" },
-  { name: "IP Tracker", img: Tracker, github: "", demo: "" },
+  { name: "IP Tracker", img: Tracker, github: "", demo: "https://presylord-ip-tracker.vercel.app/" },
   { name: "Image to Text Converter", github: "", demo: "" },
-  { name: "Simple Calculator", img: Calculator, github: "", demo: "" },
+  { name: "Simple Calculator", img: Calculator, github: "", demo: "https://presylord-calculator.vercel.app/" },
   {
     name: "Project Portfolio",
     img: Portfolio,
