@@ -1,5 +1,5 @@
 import { FaLaptop, FaLaptopCode } from "react-icons/fa";
-import Portfolio from "../assets/portfolio_img.png";
+import Portfolio from "../assets/project-portfolio.png";
 
 const projects = [
   {
