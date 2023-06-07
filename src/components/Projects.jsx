@@ -6,19 +6,46 @@ import Tracker from "../assets/project-ip-tracker.png";
 const projects = [
   {
     name: "Attendance Tracker",
+    skills: ["HTML", "BOOTSTRAP", "REACT JS", "FIREBASE"],
+
     description:
-      "Developing a productivity web app for task management, enabling users to create, organize, and prioritize tasks with due dates, descriptions, and project categorization. Features include reminders, notifications, and progress tracking for efficient goal achievement.",
+      "Effortlessly log your work hours with this web app. Sign in and track your time with ease, eliminating paperwork and ensuring accurate time management.",
     img: "",
     github: "",
     demo: "",
   },
-  { name: "Recipe Suggestions", github: "", demo: "" },
-  { name: "IP Tracker", img: Tracker, github: "", demo: "https://presylord-ip-tracker.vercel.app/" },
+  {
+    name: "Recipe Suggestions",
+    skills: ["HTML", "TAILWIND CSS", "REACT JS", "API"],
+    description:
+      "Discover a hassle-free cooking experience with this web app. Input your ingredients, and it instantly generates customized recipes for you.",
+    github: "",
+    demo: "",
+  },
+  {
+    name: "IP Tracker",
+    img: Tracker,
+    skills: ["HTML", "CSS", "REACT JS", "API"],
+    description:
+      "With this app, simply enter the IP address you want to locate, and it will provide you with precise geographical information.",
+    github: "",
+    demo: "https://presylord-ip-tracker.vercel.app/",
+  },
   { name: "Image to Text Converter", github: "", demo: "" },
-  { name: "Simple Calculator", img: Calculator, github: "", demo: "https://presylord-calculator.vercel.app/" },
+  {
+    name: "Simple Calculator",
+    img: Calculator,
+    skills: ["HTML", "CSS", "REACT JS"],
+    description: "Perform basic calculations using this basic calculator.",
+    github: "",
+    demo: "https://presylord-calculator.vercel.app/",
+  },
   {
     name: "Project Portfolio",
     img: Portfolio,
+    skills: ["HTML", "CSS", "TAILWIND CSS", "REACT JS"],
+    description:
+      "With this app, I can easily highlight my expertise, share details about my background, and proudly showcase the projects I have created. ",
     github: "https://github.com/presylord/my-portfolio-tailwind",
     demo: "/",
   },
@@ -39,43 +66,56 @@ const Projects = () => {
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Card */}
-          {projects.map(({ name, img, github, demo }, index) => {
-            return (
-              <div
-                key={index}
-                style={{
-                  backgroundImage: `url(${img})`,
-                  backgroundSize: "contain",
-                }}
-                className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div overflow-clip  "
-              >
-                <div className="group mb-[-400px] group-hover:mb-[0px] duration-500 w-full p-4 desc-div group-hover:text-sm ">
-                  <span className="text-1xl font-bold text-white tracking-wider ">
-                    {name}
-                  </span>
-                  <p className="hidden group-hover:flex  pt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent commodo orci vitae lectus dictum, eu sodales nisl
-                    scelerisque.
-                  </p>
-                  <div className="hidden group-hover:flex  pt-6 text-center justify-center">
-                    <a href={demo} target="_blank">
-                      <button className="flex text-center rounded-lg px-3 py-2 m-2 bg-white text-gray-700 font-bold text-md">
-                        <FaLaptop size={20} className="mr-1" />
-                        Demo
-                      </button>
-                    </a>
-                    <a href={github} target="_blank">
-                      <button className="flex text-center rounded-lg px-3 py-2 m-2 bg-white text-gray-700 font-bold text-md">
-                        <FaLaptopCode size={20} className="mr-1" />
-                        Code
-                      </button>
-                    </a>
+          {projects.map(
+            ({ name, img, github, demo, description, skills }, index) => {
+              return (
+                <div
+                  key={index}
+                  style={{
+                    backgroundImage: `url(${img})`,
+                    backgroundSize: "contain",
+                  }}
+                  className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div overflow-clip  "
+                >
+                  <div className="group mb-[-400px] group-hover:mb-[0px] duration-500 w-full p-4 desc-div group-hover:text-sm ">
+                    <span className="text-1xl font-bold text-white tracking-wider ">
+                      {name}
+                    </span>
+                    <div className="hidden group-hover:block">
+                      <p className="py-3">{description}</p>
+                      <div className="group-hover:flex flex-row">
+                        {skills?.map((skill, index) => {
+                          return (
+                            <span
+                              key={index}
+                              className="py-1 px-1 mx-1 my-1 font-bold  text-xs text-white bg-[#08192f] rounded-md skill"
+                            >
+                              {skill}
+                            </span>
+                          );
+                        })}
+                      </div>
+
+                      <div className="hidden group-hover:flex  pt-2 text-center justify-center">
+                        <a href={demo} target="_blank">
+                          <button className="flex text-center rounded-lg px-3 py-2 m-2 bg-white text-gray-700 font-bold text-md">
+                            <FaLaptop size={20} className="mr-1" />
+                            Demo
+                          </button>
+                        </a>
+                        <a href={github} target="_blank">
+                          <button className="flex text-center rounded-lg px-3 py-2 m-2 bg-white text-gray-700 font-bold text-md">
+                            <FaLaptopCode size={20} className="mr-1" />
+                            Code
+                          </button>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            }
+          )}
         </div>
       </div>
     </div>
