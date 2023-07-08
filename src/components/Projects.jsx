@@ -5,6 +5,15 @@ import Tracker from "../assets/project-ip-tracker.png";
 
 const projects = [
   {
+    name: "Project Portfolio",
+    img: Portfolio,
+    skills: ["HTML", "CSS", "TAILWIND CSS", "REACT JS"],
+    description:
+      "With this app, I can easily highlight my expertise, share details about my background, and proudly showcase the projects I have created. ",
+    github: "https://github.com/presylord/my-portfolio-tailwind",
+    demo: "/",
+  },
+  {
     name: "Attendance Tracker",
     skills: ["HTML", "BOOTSTRAP", "REACT JS", "FIREBASE"],
 
@@ -29,7 +38,7 @@ const projects = [
     description:
       "With this app, simply enter the IP address you want to locate, and it will provide you with precise geographical information.",
     github: "",
-    demo: "https://presylord-ip-tracker.vercel.app/",
+    demo: "https://track.presylord.com",
   },
   { name: "Image to Text Converter", github: "", demo: "" },
   {
@@ -39,15 +48,6 @@ const projects = [
     description: "Perform basic calculations using this basic calculator.",
     github: "",
     demo: "https://presylord-calculator.vercel.app/",
-  },
-  {
-    name: "Project Portfolio",
-    img: Portfolio,
-    skills: ["HTML", "CSS", "TAILWIND CSS", "REACT JS"],
-    description:
-      "With this app, I can easily highlight my expertise, share details about my background, and proudly showcase the projects I have created. ",
-    github: "https://github.com/presylord/my-portfolio-tailwind",
-    demo: "/",
   },
 ];
 
