@@ -30,10 +30,10 @@ const Navbar = () => {
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300  z-10">
       <div>
         {/* <img src={Logo} style={{ width: '50px' }} /> */}
-        <a href="#" className="text-2xl md:text-3xl  logo-text font-bold drop-shadow-2xl">
+        <Link to="home" activeClass="active" smooth={true} duration={500} spy={true} className="text-2xl md:text-3xl  logo-text font-bold drop-shadow-2xl">
           &lt;PresyLord_Dev<span className="text-[#19a7ce] font-bold">/</span>
           &gt;
-        </a>
+        </Link>
       </div>
       {/* Menu */}
       <ul className="hidden md:flex nav-menu">
