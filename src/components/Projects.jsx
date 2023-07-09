@@ -47,7 +47,7 @@ const projects = [
     skills: ["HTML", "CSS", "REACT JS"],
     description: "Perform basic calculations using this basic calculator.",
     github: "",
-    demo: "https://presylord-calculator.vercel.app/",
+    demo: "https://calculator.presylord.com/",
   },
 ];
 
