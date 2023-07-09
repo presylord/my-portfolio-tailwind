@@ -15,6 +15,16 @@ const projects = [
     demo: "/",
   },
   {
+    name: "Apartment Management System",
+    skills: ["HTML", "BOOTSTRAP CSS", "REACT JS"],
+
+    description:
+      "",
+    img: "",
+    github: "",
+    demo: "/",
+  },
+  {
     name: "OCR - Extract Text from Image",
     skills: ["HTML", "BOOTSTRAP CSS", "REACT JS", "GOOGLE VISION"],
 
