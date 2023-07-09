@@ -2,6 +2,7 @@ import { FaLaptop, FaLaptopCode } from "react-icons/fa";
 import Portfolio from "../assets/project-portfolio.png";
 import Calculator from "../assets/project-calculator.png";
 import Tracker from "../assets/project-ip-tracker.png";
+import Ocr from "../assets/project-ocr.png";
 
 const projects = [
   {
@@ -14,22 +15,14 @@ const projects = [
     demo: "/",
   },
   {
-    name: "Attendance Tracker",
-    skills: ["HTML", "BOOTSTRAP", "REACT JS", "FIREBASE"],
+    name: "OCR - Extract Text from Image",
+    skills: ["HTML", "BOOTSTRAP CSS", "REACT JS", "GOOGLE VISION"],
 
     description:
       "Effortlessly log your work hours with this web app. Sign in and track your time with ease, eliminating paperwork and ensuring accurate time management.",
-    img: "",
+    img: Ocr,
     github: "",
-    demo: "",
-  },
-  {
-    name: "Recipe Suggestions",
-    skills: ["HTML", "TAILWIND CSS", "REACT JS", "API"],
-    description:
-      "Discover a hassle-free cooking experience with this web app. Input your ingredients, and it instantly generates customized recipes for you.",
-    github: "",
-    demo: "",
+    demo: "https://ocr.presylord.com/",
   },
   {
     name: "IP Tracker",
@@ -40,7 +33,14 @@ const projects = [
     github: "",
     demo: "https://track.presylord.com",
   },
-  { name: "Image to Text Converter", github: "", demo: "" },
+  {
+    name: "Recipe Suggestions",
+    skills: ["HTML", "TAILWIND CSS", "REACT JS", "API"],
+    description:
+      "Discover a hassle-free cooking experience with this web app. Input your ingredients, and it instantly generates customized recipes for you.",
+    github: "",
+    demo: "",
+  },
   {
     name: "Simple Calculator",
     img: Calculator,
