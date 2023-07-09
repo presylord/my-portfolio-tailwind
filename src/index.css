@@ -13,7 +13,7 @@
     @apply px-4;
     @apply cursor-pointer;
   }
-  span.skill {
+  span.skill, .logo-text {
     @apply cursor-pointer;
   }
 }
