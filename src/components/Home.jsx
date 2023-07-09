@@ -14,7 +14,7 @@ const Home = () => {
           I&#39;m a
           <TypeAnimation
             sequence={[
-              " Full Stack Developer",
+              " Web Developer",
               2000,
               " Tech Enthusiast",
               2000,
