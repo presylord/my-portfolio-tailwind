@@ -25,6 +25,14 @@ const projects = [
     demo: "/",
   },
   {
+    name: "ChatCSV",
+    skills: ["HTML", "TAILWIND CSS", "REACT JS", "API"],
+    description:
+      "Under Development",
+    github: "",
+    demo: "",
+  },
+  {
     name: "OCR - Extract Text from Image",
     skills: ["HTML", "BOOTSTRAP CSS", "REACT JS", "GOOGLE VISION"],
 
@@ -42,14 +50,6 @@ const projects = [
       "With this app, simply enter the IP address you want to locate, and it will provide you with precise geographical information.",
     github: "",
     demo: "https://track.presylord.com",
-  },
-  {
-    name: "Recipe Suggestions",
-    skills: ["HTML", "TAILWIND CSS", "REACT JS", "API"],
-    description:
-      "Discover a hassle-free cooking experience with this web app. Input your ingredients, and it instantly generates customized recipes for you.",
-    github: "",
-    demo: "",
   },
   {
     name: "Simple Calculator",
