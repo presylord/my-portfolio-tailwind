@@ -16,10 +16,10 @@ const projects = [
   },
   {
     name: "Apartment Management System",
-    skills: ["HTML", "BOOTSTRAP CSS", "REACT JS"],
+    skills: ["HTML", "BOOTSTRAP CSS", "REACT JS", "NODE/EXPRESS JS", "API"],
 
     description:
-      "",
+    "Under Development",
     img: "",
     github: "",
     demo: "/",
