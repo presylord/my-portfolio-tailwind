@@ -92,8 +92,8 @@ const Projects = () => {
                       {name}
                     </span>
                     <div className="hidden group-hover:block">
-                      <p className="py-3">{description}</p>
-                      <div className="group-hover:flex flex-row">
+                      {/* <p className="py-3">{description}</p> */}
+                      <div className="group-hover:flex flex-row flex-wrap">
                         {skills?.map((skill, index) => {
                           return (
                             <span
