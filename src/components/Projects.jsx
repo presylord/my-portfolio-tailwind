@@ -6,18 +6,9 @@ import Ocr from "../assets/project-ocr.png";
 
 const projects = [
   {
-    name: "Project Portfolio",
-    img: Portfolio,
-    skills: ["HTML", "CSS", "TAILWIND CSS", "REACT JS"],
-    description:
-      "With this app, I can easily highlight my expertise, share details about my background, and proudly showcase the projects I have created. ",
-    github: "https://github.com/presylord/my-portfolio-tailwind",
-    demo: "/",
-  },
-  {
     name: "Apartment Management System",
     skills: ["HTML", "BOOTSTRAP CSS", "REACT JS", "NODE/EXPRESS JS", "API"],
-
+    
     description:
     "Under Development",
     img: "",
@@ -35,9 +26,9 @@ const projects = [
   {
     name: "OCR - Extract Text from Image",
     skills: ["HTML", "BOOTSTRAP CSS", "REACT JS", "GOOGLE VISION"],
-
+    
     description:
-      "Effortlessly log your work hours with this web app. Sign in and track your time with ease, eliminating paperwork and ensuring accurate time management.",
+    "Effortlessly log your work hours with this web app. Sign in and track your time with ease, eliminating paperwork and ensuring accurate time management.",
     img: Ocr,
     github: "",
     demo: "https://ocr.presylord.com/",
@@ -47,7 +38,7 @@ const projects = [
     img: Tracker,
     skills: ["HTML", "CSS", "REACT JS", "API"],
     description:
-      "With this app, simply enter the IP address you want to locate, and it will provide you with precise geographical information.",
+    "With this app, simply enter the IP address you want to locate, and it will provide you with precise geographical information.",
     github: "",
     demo: "https://track.presylord.com",
   },
@@ -59,12 +50,21 @@ const projects = [
     github: "",
     demo: "https://calculator.presylord.com/",
   },
+  {
+    name: "Project Portfolio",
+    img: Portfolio,
+    skills: ["HTML", "CSS", "TAILWIND CSS", "REACT JS"],
+    description:
+      "With this project, I can easily highlight my expertise, share details about my background, and proudly showcase the projects I have created. ",
+    github: "https://github.com/presylord/my-portfolio-tailwind",
+    demo: "/",
+  },
 ];
 
 const Projects = () => {
   return (
     <div
-      name="projects"
+    name="projects"
       className=" bg-[#08192f] w-full md:h-screen text-gray-300 max-md:pt-20 "
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
