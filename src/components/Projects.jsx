@@ -12,7 +12,7 @@ const projects = [
     description:
       "An intelligent app powered by OpenAI that analyzes your custom CSV files, providing valuable insights and dynamic conversations based on their data.",
     github: "",
-    demo: "",
+    demo: "https://chatcsv.presylord.com/",
   },
   {
     name: "OCR - Extract Text from Image",
@@ -31,7 +31,7 @@ const projects = [
     description:
     "With this app, simply enter the IP address you want to locate, and it will provide you with precise geographical information.",
     github: "",
-    demo: "https://track.presylord.com",
+    demo: "https://track.presylord.com/",
   },
   {
     name: "Simple Calculator",
@@ -95,12 +95,12 @@ const Projects = () => {
                             Demo
                           </button>
                         </a>
-                        <a href={github} target="_blank">
+                        {/* <a href={github} target="_blank">
                           <button className="flex text-center rounded-lg px-3 py-2 m-2 bg-white text-gray-700 font-bold text-md">
                             <FaLaptopCode size={20} className="mr-1" />
                             Code
                           </button>
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>
