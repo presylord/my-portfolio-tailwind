@@ -15,14 +15,20 @@ import GA from "../assets/ga.png";
 import GTM from "../assets/gtm.png";
 import GSC from "../assets/gsc.png";
 import AS from "../assets/apps_script.png";
+import PREACT from "../assets/preact.png";
+import FLASK from "../assets/flask.png";
+import PG from "../assets/Postgresql.png";
 
 const skill_logos = [
   { name: "HTML", img: HTML },
   { name: "CSS", img: CSS },
   { name: "JAVASCRIPT", img: JAVASCRIPT },
-  { name: "REACT", img: REACT },
-  { name: "NODE JS", img: NODE },
   { name: "PYTHON", img: PYTHON },
+  { name: "REACT", img: REACT },
+  { name: "PREACT", img: PREACT },
+  { name: "NODE JS", img: NODE },
+  { name: "FLASK", img: FLASK },
+  { name: "POSTGRES", img: PG },
   { name: "MONGO DB", img: MONGO },
   { name: "FIREBASE", img: FIREBASE },
   { name: "ODOO", img: ODOO },
@@ -31,9 +37,6 @@ const skill_logos = [
   { name: "SHOPIFY", img: SHOPIFY },
   { name: "BIGCOMMERCE", img: BC },
   { name: "GOOGLE APPS SCRIPT", img: AS },
-  { name: "GOOGLE TAG MANAGER", img: GTM },
-  { name: "GOOGLE SEARCH CONSOLE", img: GSC },
-  { name: "GOOGLE ANALYTICS", img: GA },
 ];
 
 const Skills = () => {

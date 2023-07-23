@@ -5,21 +5,12 @@ import Tracker from "../assets/project-ip-tracker.png";
 import Ocr from "../assets/project-ocr.png";
 
 const projects = [
-  {
-    name: "Apartment Management System",
-    skills: ["HTML", "BOOTSTRAP CSS", "REACT JS", "NODE/EXPRESS JS", "API"],
-    
-    description:
-    "Under Development",
-    img: "",
-    github: "",
-    demo: "/",
-  },
+
   {
     name: "ChatCSV",
-    skills: ["HTML", "TAILWIND CSS", "REACT JS", "API"],
+    skills: ["HTML", "BOOTSTRAP CSS", "PREACT JS","FLASK", "OPEN AI"],
     description:
-      "Under Development",
+      "An intelligent app powered by OpenAI that analyzes your custom CSV files, providing valuable insights and dynamic conversations based on their data.",
     github: "",
     demo: "",
   },
@@ -28,7 +19,7 @@ const projects = [
     skills: ["HTML", "BOOTSTRAP CSS", "REACT JS", "GOOGLE VISION"],
     
     description:
-    "Effortlessly log your work hours with this web app. Sign in and track your time with ease, eliminating paperwork and ensuring accurate time management.",
+    "This web app that uses Google Vision's OCR technology to effortlessly convert text from images into editable and searchable content, streamlining productivity and data extraction.",
     img: Ocr,
     github: "",
     demo: "https://ocr.presylord.com/",
@@ -50,15 +41,6 @@ const projects = [
     github: "",
     demo: "https://calculator.presylord.com/",
   },
-  {
-    name: "Project Portfolio",
-    img: Portfolio,
-    skills: ["HTML", "CSS", "TAILWIND CSS", "REACT JS"],
-    description:
-      "With this project, I can easily highlight my expertise, share details about my background, and proudly showcase the projects I have created. ",
-    github: "https://github.com/presylord/my-portfolio-tailwind",
-    demo: "/",
-  },
 ];
 
 const Projects = () => {
@@ -74,7 +56,7 @@ const Projects = () => {
           </p>
           <p className="py-6">Check out my recent work</p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {/* Card */}
           {projects.map(
             ({ name, img, github, demo, description, skills }, index) => {
@@ -83,16 +65,16 @@ const Projects = () => {
                   key={index}
                   style={{
                     backgroundImage: `url(${img})`,
-                    backgroundSize: "contain",
+                    // backgroundSize: "contain",
                   }}
                   className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div overflow-clip  "
                 >
                   <div className="group mb-[-400px] group-hover:mb-[0px] duration-500 w-full p-4 desc-div group-hover:text-sm ">
-                    <span className="text-1xl font-bold text-white tracking-wider ">
+                    <span className="text-1xl font-bold text-white tracking-wider " style={{textShadow: "3px 3px 10px black"}}>
                       {name}
                     </span>
                     <div className="hidden group-hover:block">
-                      {/* <p className="py-3">{description}</p> */}
+                      <p className="py-3" style={{textShadow: "3px 5px 10px black"}}>{description}</p>
                       <div className="group-hover:flex flex-row flex-wrap">
                         {skills?.map((skill, index) => {
                           return (

@@ -53,7 +53,7 @@ const Contact = () => {
             Contact
           </p>
           <p className="text-gray-300 py-4">
-            Send me an email - presylord@gmail.com
+            Want to connect? Send me an email! 
           </p>
         </div>
         <input
