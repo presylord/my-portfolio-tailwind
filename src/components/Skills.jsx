@@ -16,7 +16,7 @@ import GTM from "../assets/gtm.png";
 import GSC from "../assets/gsc.png";
 import AS from "../assets/apps_script.png";
 import PREACT from "../assets/preact.png";
-import FLASK from "../assets/flask.png";
+import FLASK from "../assets/python_flask.png";
 import PG from "../assets/Postgresql.png";
 
 const skill_logos = [
