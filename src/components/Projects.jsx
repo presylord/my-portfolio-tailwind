@@ -14,7 +14,7 @@ const projects = [
     description:
       "An intelligent app powered by OpenAI that analyzes your custom CSV files, providing valuable insights and dynamic conversations based on their data.",
     github: "",
-    demo: "#",
+    demo: "https://chat.presylord.com",
   },
   {
     name: "OCR - Extract Text from Image",
