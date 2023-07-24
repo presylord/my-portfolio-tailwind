@@ -3,16 +3,18 @@ import Portfolio from "../assets/project-portfolio.png";
 import Calculator from "../assets/project-calculator.png";
 import Tracker from "../assets/project-ip-tracker.png";
 import Ocr from "../assets/project-ocr.png";
+import csv from "../assets/chatcsv.png";
 
 const projects = [
 
   {
     name: "ChatCSV",
+    img: csv,
     skills: ["HTML", "BOOTSTRAP CSS", "PREACT JS","FLASK", "OPEN AI"],
     description:
       "An intelligent app powered by OpenAI that analyzes your custom CSV files, providing valuable insights and dynamic conversations based on their data.",
     github: "",
-    demo: "#",
+    demo: "https://chat.presylord.com/",
   },
   {
     name: "OCR - Extract Text from Image",
