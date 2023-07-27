@@ -21,7 +21,7 @@ const projects = [
     skills: ["HTML", "BOOTSTRAP CSS", "REACT JS", "GOOGLE VISION"],
     
     description:
-    "This web app that uses Google Vision's OCR technology to effortlessly convert text from images into editable and searchable content, streamlining productivity and data extraction.",
+    "This web app uses Google Vision's OCR technology to effortlessly convert text from images into editable and searchable content, streamlining productivity and data extraction.",
     img: Ocr,
     github: "",
     demo: "https://ocr.presylord.com/",
