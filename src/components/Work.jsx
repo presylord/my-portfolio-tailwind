@@ -13,7 +13,7 @@ const Work = () => {
       icon: <FaLaptopCode />,
 
       details:
-        "As a Senior Web Developer, I design and develop new features for the company's web pages using Python, provide alternative solutions for data display, and install Odoo instances on cloud servers. I also collaborated with teams to implement new features, ensured optimal user experience, resolved issues, and improved code performance and user experience.",
+        "As a Senior Web Developer, I design and develop new features for the company's web pages using JavaScript(Frontend) and Python(Backend), provide alternative solutions for data display, and install Odoo instances on cloud servers. I also collaborated with teams to implement new features, ensured optimal user experience, resolved issues, and improved code performance and user experience.",
     },
     {
       year: "August 2020 - January 2022",
