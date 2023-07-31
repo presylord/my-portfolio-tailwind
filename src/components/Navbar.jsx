@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   const closeModal = (e) => {
-    console.log( e.target.id)
+    // console.log( e.target.id)
     if (e.target.id === 'resumeContainer' || e.target.id === 'closeBtn'){
       setIsModalOpen(false)
     }
