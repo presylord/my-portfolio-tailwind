@@ -3,12 +3,33 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
+import Modal from './Modal';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (name) => {
+    if (name == 'Resume'){
+      setIsModalOpen(true);
+
+    }
+  };
+
+  const closeModal = (e) => {
+    console.log( e.target.id)
+    if (e.target.id === 'resumeContainer' || e.target.id === 'closeBtn'){
+      setIsModalOpen(false)
+    }
+
+
+  };
+
   const handleClick = () => {
     setToggle(!toggle);
   };
+
+  const resumePath = '/Resume - Presy Lord Kidlat.pdf';
 
   const navItems = [
     { name: "Home", target: "home" },
@@ -23,13 +44,13 @@ const Navbar = () => {
     { name: "LinkedIn", icon: <FaLinkedin size={30} />, url: "https://www.linkedin.com/in/presylord/", color: "bg-blue-600" },
     { name: "Github", icon: <FaGithub size={30} />, url: "https://github.com/presylord", color: "bg-[#333333]" },
     { name: "Email", icon: <HiOutlineMail size={30} />, url: "mailto:presylord@gmail.com", color: "bg-[#6fc2b0]" },
-    { name: "Resume", icon: <BsFillPersonLinesFill size={30} />, url: "#", color: "bg-[#565f69]" },
+    { name: "Resume", icon: <BsFillPersonLinesFill size={30} />, url: "/#", color: "bg-[#565f69]" },
   ]
+
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300  z-10">
       <div>
-        {/* <img src={Logo} style={{ width: '50px' }} /> */}
         <Link to="home" activeClass="active" smooth={true} duration={500} spy={true} className="text-2xl md:text-3xl  logo-text font-bold drop-shadow-2xl">
           &lt;PresyLord_Dev<span className="text-[#19a7ce] font-bold">/</span>
           &gt;
@@ -90,10 +111,10 @@ const Navbar = () => {
             return <a key={index}
               className="flex justify-between items-center w-full"
               href={url}
-              target="_blank"
+              target={name == 'Resume' ? '' : '_blank'}
               rel="noreferrer"
             >
-              <li className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${color}`}>
+              <li className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${color}`} onClick={()=> {openModal(name)}}>
                 {name}
                 {icon}
               </li>
@@ -101,6 +122,13 @@ const Navbar = () => {
           })}
         </ul>
       </div>
+
+      <Modal isOpen={isModalOpen} onClose={closeModal} resumePath={resumePath}>
+        <p>Modal content goes here.</p>
+      </Modal>
+
+
+
     </div>
   );
 };

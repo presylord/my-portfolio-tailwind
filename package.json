@@ -11,11 +11,14 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@headlessui/react": "^1.7.16",
     "email-js": "^2.0.2",
+    "pdfjs-dist": "^3.9.179",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.8.0",
+    "react-pdf": "^7.3.0",
     "react-scroll": "^1.8.9",
     "react-type-animation": "^3.0.1",
     "react-vertical-timeline-component": "^3.6.0"
