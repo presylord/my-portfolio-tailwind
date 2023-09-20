@@ -29,7 +29,8 @@ const Navbar = () => {
     setToggle(!toggle);
   };
 
-  const resumePath = '/Resume - Presy Lord Kidlat.pdf';
+  // const resumePath = '/Resume - Presy Lord Kidlat.pdf';
+  const resumePath = '/Resume-Presy-Lord-Kidlat-new.pdf';
 
   const navItems = [
     { name: "Home", target: "home" },
