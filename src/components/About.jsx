@@ -19,11 +19,8 @@ const About = () => {
           </div>
           <div>
             <p>
-              I'm a passionate web developer with expertise in React,
-              JavaScript, jQuery, Odoo Development, Magento, Shopify,
-              BigCommerce, WordPress, Python, NodeJS, DevOps, and SEO. I thrive
-              on challenges and love expanding my skills. Let's collaborate and
-              bring your ideas to life!
+              I'm a passionate web developer with expertise in React, JavaScript, Python, Odoo Development, Shopify, BigCommerce, WordPress, and SEO. 
+              I thrive on challenges and love expanding my skills.
             </p>
           </div>
         </div>
