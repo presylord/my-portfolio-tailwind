@@ -7,6 +7,15 @@ import { FaHardHat, FaLaptopCode } from "react-icons/fa";
 const Work = () => {
   const workData = [
     {
+      year: "March 2023 - Present",
+      title: "Freelance Web Developer",
+      company: "UpWork",
+      icon: <FaLaptopCode />,
+
+      details:
+        "As a freelance web developer, I've boosted email deliverability with DNS configurations, resolved Google Search Console issues through Structured Data, and optimized e-commerce sites with custom Shopify Liquid templates. I've also provided tailored solutions as an Odoo consultant and created interactive calculators using Vanilla JS and React, seamlessly integrated into WordPress.",
+    },
+    {
       year: "January 2022 - Present",
       title: "Web Developer",
       company: "Journey Better Business Group Inc.",
