@@ -13,7 +13,7 @@ const projects = [
     img: indexerv1,
     skills: ["HTML","FLASK", "GOOGLE API"],
     description:
-      "A barebones app allows a user to submit URLs under his/her domain property and check if they are indexed by Google. If not, the user has the option to submit the URLs to Google and prioritize indexing.",
+      "A barebones app that allows a user to submit URLs under his/her domain property and check if they are indexed by Google. If not, the user has the option to submit the URLs to Google and prioritize indexing.",
     github: "",
     demo: false,
   },
