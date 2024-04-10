@@ -4,9 +4,19 @@ import Calculator from "../assets/project-calculator.png";
 import Tracker from "../assets/project-ip-tracker.png";
 import Ocr from "../assets/project-ocr.png";
 import csv from "../assets/chatcsv.png";
+import indexerv1 from "../assets/g-indexer.png";
 
 const projects = [
 
+  {
+    name: "Google Indexer v1",
+    img: indexerv1,
+    skills: ["HTML","FLASK", "GOOGLE API"],
+    description:
+      "A barebones app allows a user to submit URLs under his/her domain property and check if they are indexed by Google. If not, the user has the option to submit the URLs to Google and prioritize indexing.",
+    github: "",
+    demo: false,
+  },
   {
     name: "ChatCSV",
     img: csv,
@@ -91,12 +101,12 @@ const Projects = () => {
                       </div>
 
                       <div className="hidden group-hover:flex  pt-2 text-center justify-center">
-                        <a href={demo} target="_blank">
+                        { demo && <a href={demo} target="_blank">
                           <button className="flex text-center rounded-lg px-3 py-2 m-2 bg-white text-gray-700 font-bold text-md">
                             <FaLaptop size={20} className="mr-1" />
                             Demo
                           </button>
-                        </a>
+                        </a>}
                         {/* <a href={github} target="_blank">
                           <button className="flex text-center rounded-lg px-3 py-2 m-2 bg-white text-gray-700 font-bold text-md">
                             <FaLaptopCode size={20} className="mr-1" />
