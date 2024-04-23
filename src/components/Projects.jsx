@@ -4,16 +4,26 @@ import Calculator from "../assets/project-calculator.png";
 import Tracker from "../assets/project-ip-tracker.png";
 import Ocr from "../assets/project-ocr.png";
 import csv from "../assets/chatcsv.png";
-import indexerv1 from "../assets/g-indexer.png";
+import indexerv1 from "../assets/project-g-indexer.png";
+import indexerv2 from "../assets/project-g-indexer-v2.png";
 
 const projects = [
 
+  {
+    name: "Google Indexer v2",
+    img: indexerv2,
+    skills: ["HTML","CSS","JS","NEXT.JS","APPWRITE","GOOGLE API"],
+    description:
+      "Enhanced version of my minimalist indexer app featuring authentication via Appwrite integration and seamless connection to a database for tracking request counts.",
+    github: "",
+    demo: "https://indexer.presylord.com",
+  },
   {
     name: "Google Indexer v1",
     img: indexerv1,
     skills: ["HTML","FLASK", "GOOGLE API"],
     description:
-      "A barebones app that allows a user to submit URLs under his/her domain property and check if they are indexed by Google. If not, the user has the option to submit the URLs to Google and prioritize indexing.",
+      "A barebones app that allows an owner of a domain to submit URLs check if they are indexed by Google. If not, the owner has the option to submit the URLs to Google and prioritize indexing.",
     github: "",
     demo: false,
   },
