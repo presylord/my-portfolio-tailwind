@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   // const resumePath = '/Resume - Presy Lord Kidlat.pdf';
-  const resumePath = '/Resume-Presy-Lord-Kidlat-new.pdf';
+  const resumePath = '/Resume-Presy-Lord-Kidlat-2024.pdf';
 
   const navItems = [
     { name: "Home", target: "home" },
@@ -45,7 +45,7 @@ const Navbar = () => {
     { name: "LinkedIn", icon: <FaLinkedin size={30} />, url: "https://www.linkedin.com/in/presylord/", color: "bg-blue-600" },
     { name: "Github", icon: <FaGithub size={30} />, url: "https://github.com/presylord", color: "bg-[#333333]" },
     { name: "Email", icon: <HiOutlineMail size={30} />, url: "mailto:presylord@gmail.com", color: "bg-[#6fc2b0]" },
-    { name: "Resume", icon: <BsFillPersonLinesFill size={30} />, url: "/#", color: "bg-[#565f69]" },
+    { name: "Resume", icon: <BsFillPersonLinesFill size={30} />, url: "#", color: "bg-[#565f69]" },
   ]
 
 

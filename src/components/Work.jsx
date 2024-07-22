@@ -7,6 +7,15 @@ import { FaHardHat, FaLaptopCode } from "react-icons/fa";
 const Work = () => {
   const workData = [
     {
+      year: "May 2024 - Present",
+      title: "Freelance Web Developer",
+      company: "Acacia Team",
+      icon: <FaLaptopCode />,
+
+      details:
+        "As a freelance web developer, I've developed a real estate listing management application using Appsmith, a Low Code solution, and built a responsive front-end website using Next JS, showcasing real estate listings and providing listings management capabilities. I've also utilized Firebase for backend services, Cloudflare for content delivery and security, and Cloudinary for image hosting and management.",
+    },
+    {
       year: "March 2023 - Present",
       title: "Freelance Web Developer",
       company: "UpWork",
